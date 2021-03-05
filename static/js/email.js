@@ -1,4 +1,5 @@
 // Script for EmailJS API as well as alerts
+// Environ variable set up for EMAILJS_KEY
 
 function sendMail(contactForm) {
     emailjs.send("gmail", "murray_bealby", {

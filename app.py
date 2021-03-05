@@ -29,6 +29,14 @@ def profile():
     return render_template("profile.html")
 
 
+# Function to load 'Profile' page
+
+@app.route('/contact')
+def contact():
+    return render_template("contact.html",
+                           EMAILJS_KEY=EMAILJS_KEY)
+
+
 # IP and PORT
 
 if __name__ == '__main__':
