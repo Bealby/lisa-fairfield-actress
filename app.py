@@ -31,6 +31,13 @@ def gallery():
 
 # Function to load 'Profile' page
 
+@app.route('/showreels')
+def showreels():
+    return render_template("showreels.html")
+
+
+# Function to load 'Profile' page
+
 @app.route('/profile')
 def profile():
     return render_template("profile.html")
