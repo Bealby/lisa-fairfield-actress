@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico" />
+        <title>Lisa Fairfield</title>
+        <style>
+            .modal-backdrop {
+                position: relative;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 900;
+            }
+
+            .modal {
+                background-color: rgb(0, 0, 0, 0.8);
+                padding-top: 4rem;
+            }
+            .modal-body {
+                max-height: calc(100vh - 300px);
+                overflow-y: auto;
+            }
+            .modal-dialog {
+                max-width: 100rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <!--Main Header-->
+            <!--Main header removed on smaller devices-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col d-none d-sm-block">
+                        <div class="header-title">
+                            <a href="index.html">
+                                <h2>Actor</h2>
+                                <h1>Lisa Fairfeld</h1>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Block Divider-->
+                    <!--Block divider removed on smaller devices-->
+                    <div class="col-12 d-none d-sm-block">
+                        <div class="header-block-divider mx-auto"></div>
+                    </div>
+
+                    <!--Nav Bar-->
+                    <!--For the collaspe Navbar function for smaller devices new headers are implimented with smaller font size. 
+                At the same time original headers are removed-->
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-white nav-menuitem">
+                            <a class="navbar-brand d-block d-sm-none" href="index.html">
+                                <div class="row">
+                                    <span class="nav-menu-title-actress mx-auto mb-1">Actor</span>
+                                </div>
+                                <div class="row">
+                                    <span class="nav-menu-title-lisa">Lisa Fairfield</span>
+                                </div>
+                            </a>
+                            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                                <ul class="navbar-nav mr-auto mt-3 mt-sm-0 mx-auto">
+                                    <li class="nav-item pr-3">
+                                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item pr-3">
+                                        <a class="nav-link" href="gallery.html">Gallery</a>
+                                    </li>
+                                    <li class="nav-item pr-3">
+                                        <a class="nav-link" href="showreels.html">Showreels</a>
+                                    </li>
+                                    <li class="nav-item active pr-3">
+                                        <a class="nav-link" href="bio.html">Bio</a>
+                                    </li>
+                                    <li class="nav-item pr-3">
+                                        <a class="nav-link" href="profile.html">Profile</a>
+                                    </li>
+                                    <li class="nav-item pr-3">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <!--Block Divider-->
+                    <div class="col-12 mb-3">
+                        <div class="header-block-divider mx-auto mt-0"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--Section Bio-->
+        <!--Two columns of image and text on large devices. One column on Medium and small respectively.-->
+        <section>
+            <div class="container-fluid">
+                <div class="row mt-5 section-text bio-margin">
+                    <div class="col-12 col-lg-6 mb-5 bio-text-justify padding-bio-right">
+                        <p class="section-headers"><i class="fa fa-trophy mb-3"></i>&ensp;&ensp;Education & Work</p>
+                        <p class="text-muted">
+                            I graduated in English with a Upper Second Class Honours from Edinburgh University. Having 
+                            further graduated from the Foundation course at the Academy of Creative Training (ACT) drama school in Brighton, I
+                            followed this up with a two year ACT Diploma.
+                        </p>
+                        <p class="text-muted">
+                            My first job entailed touring nine Theatre in Education (TIE) productions for six months and I thrived off the camaraderie,
+                            commitment and stamina needed to resonate with multiple characters in three daily shows.
+                            Improvisational skills, energy and versatility were essential in playing the sassy ingénue, historical and
+                            Shakespearean heroines, dark and light fairytale characters with equal aplomb.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-5 bio-text-justify padding-bio-left">
+                        <p class="section-headers"><i class="fa fa-theater-masks mb-3"></i>&ensp;&ensp;What drives me?</p>
+                        <p class="text-muted">
+                            My love, talent and instinct for the stage drives me and has enabled steady theatrical work over ten
+                            years with six professional Theatre Companies. I have regularly been involved in major cultural festivals.
+                        </p>
+                        <p class="text-muted">
+                            Versatile, with a wide playing age, I am not scared to delve deep into the dark, light and comic
+                            world with appropriate passion, calm instinct and sense of play.
+                        </p>
+                        <p class="text-muted">
+                            I am particularly attracted to the powerful theatrical inspiration an ensemble can bring to our
+                            community. Such an opportunity has has led me to set up my own children’s theatre group which is linked to the local
+                            theatre.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 offset-md-3 mb-5">
+                        <img src="assets/images/bio-image-1.jpg" class="img-fluid mx-auto rounded image mb-3" alt="Lisa Fairfield Actress" />
+                    </div>
+                    <div class="ccol-12 col-lg-6 mb-5 bio-text-justify padding-bio-right">
+                        <p class="section-headers"><i class="fas fa-running mb-3"></i>&ensp;&ensp;My Strengths</p>
+                        <p class="text-muted">I am hard-working, committed and thrive on working within a team. A special strength is
+                            to be always aware to strive to satisfy the audience.</p>
+                        <p class="text-muted">To date as an actress I have managed my career without an agent. I now wish to
+                            open more doors and expand my work on stage, film and adverts.</p>
+                        <p class="text-muted">Directors have taken 'my troup' to award winning, five star
+                            productions to Edinburgh, Brighton and Glastonbury Festivals.</p>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-5 bio-text-justify padding-bio-left">
+                        <p class="section-headers"><i class="far fa-handshake mb-3"></i>&ensp;&ensp;Why Be My Agent?</p>
+                        <p class="text-muted">
+                            I am an open and easy person who is never happier than when I am researching my character's background and
+                            inhabiting their world. Allowing for a three dimensional, spiritual, physical and vocally layered stage
+                            presence, to radiate.
+                        </p>
+                        <p class="text-muted">
+                        I deliver. Letting people down is not in my nature.
+                        </p>
+                        <p class="text-muted">
+                            My ability to absorb a character and follow authentic impulses, comes from listening skills and
+                            understanding the context. Relinquishing ego and respecting the rehearsal space like a place of worship all make for
+                            a fine foundation for a director to work from.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 offset-md-3 mb-5">
+                        <img src="assets/images/bio-image-2.jpg" class="img-fluid mx-auto rounded image mb-3" alt="Lisa Fairfield Actress" />
+                    </div>
+                    <div class="col-12 mb-5 bio-text-justify text-center pl-0 pr-0">
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="section-headers">Nick Brice – Artistic Director</h4>
+                                    </div>
+                                    <div class="modal-body bio-text-justify">
+                                        <p class="text-muted">I worked with Lisa for 3 years on a range of theatre projects in Brighton, Edinburgh, London and at Glastonbury.</p>
+                                        <p class="text-muted">
+                                            She was initially with us as a performer, quickly moving on and taking on a range of producer-stage manager-team leader roles over the period that required a range of important competencies and
+                                            emotional intelligence due to the range or pressures and challenges that performing live theatre and hospitality present.
+                                        </p>
+                                        <p class="text-muted">
+                                            As a professional performer she was top class in all respects, well prepared, reliable, punctual, and a great 'team player' - personable, friendly, warm and gently assertive when required. The
+                                            shows she helped develop and perform were top quality, helping the team win a shortlisting for the premier theatre award at the Edinburgh Festival.
+                                        </p>
+                                        <p class="text-muted">In addition to performing, she quickly and proactively involved herself in all aspects of the leadership and management of the group.</p>
+                                        <p class="text-muted">This included developing and running the catering we would provide on our shows - sourcing supplies, organizing food preparation, serving the public.</p>
+                                        <p class="text-muted">
+                                            She also took on the role of organizing the housing for our teams, sourcing accommodation, dealing with agencies, negotiating contracts, as well as setting up and organizing sleeping arrangements
+                                            to host guest and create revenue for the group to help boost incomes for team members.
+                                        </p>
+                                        <p class="text-muted">
+                                            She also took a lead role in stage managing/supervising live high pressure show environment with big audiences. This required dealing positively and assertively with sensitive under pressure
+                                            performers. Her ability to get things done through potentially 'difficult' people was very noticeable.
+                                        </p>
+                                        <p class="text-muted">She would also handle public contact with audiences calmly and positively, serving breakfast to hungry demanding crowds at high speed and with great customer service.</p>
+                                        <p class="text-muted">
+                                            Her roles including researching and sourcing props, costumes and equipment from a range of suppliers, keeping clear financial records, as well as ensuring everything was transported to venues, and
+                                            when on location, ensuring the team put and kept everything in its right place.
+                                        </p>
+                                        <p class="text-muted">
+                                            She was always willing to take on any responsibility that needing doing - with energy and calm, often leading other people, winning their support, getting and keeping them on board with company
+                                            procedures and plans. She was very effective in organizing housing for entire teams, dealing with the landlord and agency, setting up and coordinating plans and schedules for room sharing to raise
+                                            additional income for the group.
+                                        </p>
+                                        <p class="text-muted">
+                                            She was always ahead of other members of the team on preparation and organization, and was always positive, polite and warm even when under very high pressure and demanding work schedules.
+                                        </p>
+                                        <p class="text-muted">
+                                            Our experience was one of a woman of energy, focus and dedication, who can handle people with warmth and politeness, as well as being gently and assertive, dealing with some very potentially
+                                            'difficult' characters under intense pressure, and making sure a wide range of responsibilities were executed professionally. We won several award nominations, awards and 5 star press acclaim for
+                                            our work during the time Lisa was on our team.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-font-open btn-sm default-button hover-overlay-text margin-open" data-dismiss="modal">CLOSE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <p class="section-headers"><i class="fas fa-book-open mb-3"></i>&ensp;&ensp;References</p>
+                            <p class="text-muted reference-text">
+                                Nick Brice – Artistic Director&ensp;
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="btn btn-font-open btn-sm default-button hover-overlay-text" data-toggle="modal" data-target="#myModal">OPEN</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll to top of page arrow -->
+            <div class="page-top-button shadow-sm rounded-0 border border-black d-xl-none">
+                <a class="page-top-link d-flex h-100">
+                    <i class="fas fa-chevron-up text-black mx-auto my-auto"></i>
+                </a>
+            </div>
+
+        </section>
+
+        <!--Footer-->
+        <footer class="container-fluid" id="wrapper">
+            <div class="row footer mb-4">
+                <!--Block Divider-->
+                <div class="col-12">
+                    <div class="header-block-divider mx-auto mt-0 mb-4"></div>
+                </div>
+                <div class="col-md-6 col-lg-6 footer-align-email footer-margin-bottom">
+                    <a href="mailto:lisafairfield1@gmail.com?">
+                        <p class="footer-menuitem"><i class="far fa-envelope"></i>&nbsp;&nbsp;lisafairfield1@gmail.com</p>
+                        <span class="sr-only">Email</span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-6 footer-align-tel">
+                    <a href="tel:+447890287456">
+                        <p class="footer-menuitem"><i class="fas fa-phone"></i>&nbsp;&nbsp;+44 7890 287 456</p>
+                        <span class="sr-only">Telephone</span>
+                    </a>
+                </div>
+                <div class="col-12 copyright text-muted">
+                    <p class="copyright-text">Copyright <i class="far fa-copyright"></i> 2021 Murray Bealby</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="assets/js/scroll.js"></script>
+    </body>
+</html>
