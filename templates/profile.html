@@ -1,532 +1,427 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-        <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico" />
-        <title>Lisa Fairfield</title>
-    </head>
+{% extends 'base.html' %} {% block content %}
 
-    <body>
-        <header>
-            <!--Main Header-->
-            <!--Main header removed on smaller devices-->
-            <div class="container-fluid">
+<section>
+    <div class="container">
+        <div class="row mb-5 profile-margin">
+            <div class="col-12">
+                <!--Image/ Table for lg-->
+                <div class="row mb-5">
+                    <div class="col-6 d-none d-md-block text-center">
+                        <img src="static/images/profile.png" class="profile" alt="Lisa Fairfield Actress" />
+                    </div>
+                    <table class="table table-borderless table-sm col-6 d-none d-md-block my-auto">
+                        <thead>
+                            <tr>
+                                <th scope="col">Height</th>
+                                <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                                <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                                <th scope="col" style="font-weight: normal;">5'7</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Build</th>
+                                <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                                <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                                <th scope="col" style="font-weight: normal;">Slim</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Hair</th>
+                                <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                                <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                                <th scope="col" style="font-weight: normal;">Light Brown</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Eyes</th>
+                                <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                                <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                                <th scope="col" style="font-weight: normal;">Green</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Playing Age</th>
+                                <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                                <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                                <th scope="col" style="font-weight: normal;">30-40</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <!--Image/ Table for sm-->
+                <div class="row mb-5 d-md-none">
+                    <div class="col-12 text-center">
+                        <img src="assets/images/profile.png" class="profile" alt="Lisa Fairfield Actress" />
+                    </div>
+                </div>
+                <table class="table table-borderless table-sm d-md-none">
+                    <thead>
+                        <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                            <th scope="col">Height</th>
+                            <th scope="col" style="font-weight: normal;">5'7</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                            <th scope="col">Build</th>
+                            <th scope="col" style="font-weight: normal;">Slim</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                            <th scope="col">Hair</th>
+                            <th scope="col" style="font-weight: normal;">Light Brown</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                            <th scope="col">Eyes</th>
+                            <th scope="col" style="font-weight: normal;">Green</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">&nbsp;&nbsp;&nbsp;</th>
+                            <th scope="col">Playing Age</th>
+                            <th scope="col" style="font-weight: normal;">30-40</th>
+                        </tr>
+                    </thead>
+                </table>
                 <div class="row">
-                    <div class="col d-none d-sm-block">
-                        <div class="header-title">
-                            <a href="index.html">
-                                <h2>Actor</h2>
-                                <h1>Lisa Fairfeld</h1>
-                            </a>
-                        </div>
+                    <div class="col-12 mt-5 mb-3">
+                        <p class="section-headers"><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp;&nbsp;Achievements</p>
                     </div>
-
-                    <!--Block Divider-->
-                    <!--Block divider removed on smaller devices-->
-                    <div class="col-12 d-none d-sm-block">
-                        <div class="header-block-divider mx-auto"></div>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Qualification</th>
+                            <th scope="col" class="text-right">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>'Acting Diploma' Academy of Creative Training (ACT)</td>
+                            <td class="text-right">2005-07</td>
+                        </tr>
+                        <tr>
+                            <td>Meisner Technique Training</td>
+                            <td class="text-right">2005 (4 Mths)</td>
+                        </tr>
+                        <tr>
+                            <td>Forum Theatre Augustus Boal Weekend Workshop</td>
+                            <td class="text-right">2005</td>
+                        </tr>
+                        <tr>
+                            <td>Physical Theatre and Body Voice Training with Britt Forsberg</td>
+                            <td class="text-right">2005</td>
+                        </tr>
+                        <tr>
+                            <td>'Foundation in Acting' Academy of Creative Training (ACT)</td>
+                            <td class="text-right">2004-05</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col mt-5 mb-3">
+                        <p class="section-headers"><i class="fas fa-theater-masks"></i>&nbsp;&nbsp;&nbsp;Theatre Experience</p>
                     </div>
+                </div>
+                <!--Table for desktop-->
+                <table class="table table-striped d-none d-md-block">
+                    <thead>
+                        <tr>
+                            <th scope="col">Perfomance</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Company</th>
+                            <th scope="col">Venue</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Playhouse Creatures by April de Angelis</td>
+                            <td>Mrs Farley</td>
+                            <td>Bryteye Productions</td>
+                            <td>All Saints, Lewes</td>
+                            <td>2014</td>
+                        </tr>
+                        <tr>
+                            <td>Gabriel by Moira Buffini</td>
+                            <td>Lily</td>
+                            <td>Bryteye Productions</td>
+                            <td>All Saints, Lewes</td>
+                            <td>2012</td>
+                        </tr>
+                        <tr>
+                            <td>Blackbird</td>
+                            <td>Una</td>
+                            <td>The Players’ Collective</td>
+                            <td>Marlborough Theatre</td>
+                            <td>2011</td>
+                        </tr>
+                        <tr>
+                            <td>David Harrower Lysistrata</td>
+                            <td>Myrene</td>
+                            <td>The Players’ Collective</td>
+                            <td>All Saints, Lewes</td>
+                            <td>2011</td>
+                        </tr>
+                        <tr>
+                            <td>Kvetch, Stephen Berkoff</td>
+                            <td>Donna</td>
+                            <td>Theatre 21</td>
+                            <td>BMC, Brighton Fringe Festival</td>
+                            <td>2010</td>
+                        </tr>
+                        <tr>
+                            <td>In Lambeth, Jack Shepherd</td>
+                            <td>Catherine Blake</td>
+                            <td>Love and Madness</td>
+                            <td>St Joseph Theatre, Scarborough</td>
+                            <td>2010</td>
+                        </tr>
+                        <tr>
+                            <td>Lady of Dubuque, Edward Bond</td>
+                            <td>Lucinda</td>
+                            <td>Salt Season</td>
+                            <td>Lewes Theatre</td>
+                            <td>2010</td>
+                        </tr>
+                        <tr>
+                            <td>Bite Size Plays</td>
+                            <td>Various</td>
+                            <td>White Room Theatre</td>
+                            <td>Bedlam Theatre, Edinburgh Festival</td>
+                            <td>2010</td>
+                        </tr>
+                        <tr>
+                            <td>The Real Inspector Hound</td>
+                            <td>Cynthia</td>
+                            <td>Lewes Little Theatre</td>
+                            <td>Lewes Little Theatre</td>
+                            <td>2009</td>
+                        </tr>
+                        <tr>
+                            <td>Blood Brothers</td>
+                            <td>Mrs Johnston</td>
+                            <td>Lewes Little Theatre</td>
+                            <td>Lewes Little Theatre</td>
+                            <td>2009</td>
+                        </tr>
+                        <tr>
+                            <td>Role Play for OSCE</td>
+                            <td>Various</td>
+                            <td>Brighton Role Play</td>
+                            <td>Brighton Hospital</td>
+                            <td>2009</td>
+                        </tr>
+                        <tr>
+                            <td>Tell Someone Who Cares</td>
+                            <td>Sandy</td>
+                            <td>White Room Theatre</td>
+                            <td>Sally Bennis Theatre</td>
+                            <td>2009</td>
+                        </tr>
+                        <tr>
+                            <td>Bite Size Plays</td>
+                            <td>Various</td>
+                            <td>White Room Theatre</td>
+                            <td>Roman Eagle Lodge, Edinburgh Festival Fringe First nomination</td>
+                            <td>2009</td>
+                        </tr>
+                        <tr>
+                            <td>4 month Theatre in Education Tour</td>
+                            <td>Various</td>
+                            <td>Rainbow Theatre</td>
+                            <td>Southern County Schools</td>
+                            <td>2008</td>
+                        </tr>
+                        <tr>
+                            <td>Cinderella</td>
+                            <td>Cinderella</td>
+                            <td>Rainbow Theatre</td>
+                            <td>Southern County Schools</td>
+                            <td>2008</td>
+                        </tr>
+                        <tr>
+                            <td>Once a Catholic</td>
+                            <td>Mary McGInty</td>
+                            <td>ACT</td>
+                            <td>Brighton Pavillion</td>
+                            <td>2008</td>
+                        </tr>
+                        <tr>
+                            <td>Christmas Carol</td>
+                            <td>Niece</td>
+                            <td>ACT</td>
+                            <td>The Nightingale, Brighton</td>
+                            <td>2008</td>
+                        </tr>
+                        <tr>
+                            <td>Preston Manor</td>
+                            <td>Housekeeper</td>
+                            <td>Brighton Museum</td>
+                            <td>Preston Manor</td>
+                            <td>2008</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Table for small-->
+                <table class="table table-striped d-md-none">
+                    <thead>
+                        <tr>
+                            <th scope="col">Perfomance</th>
+                            <th scope="col">Company</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Playhouse Creatures by April de Angelis</td>
+                            <td>Bryteye Productions</td>
+                            <td>2014</td>
+                        </tr>
+                        <tr>
+                            <td>Gabriel by Moira Buffini</td>
+                            <td>Bryteye Productions</td>
+                            <td>2012</td>
+                        </tr>
+                        <tr>
+                            <td>Blackbird</td>
+                            <td>The Players’ Collective</td>
+                            <td>2011</td>
+                        </tr>
+                        <tr>
+                            <td>David Harrower Lysistrata</td>
+                            <td>The Players’ Collective</td>
+                            <td>2011</td>
+                        </tr>
+                        <tr>
+                            <td>Kvetch, Stephen Berkoff</td>
+                            <td>Theatre 21</td>
+                            <td>2010</td>
+                        </tr>
+                        <tr>
+                            <td>In Lambeth, Jack Shepherd</td>
+                            <td>Love and Madness</td>
+                            <td>2010</td>
+                        </tr>
+                        <tr>
+                            <td>Lady of Dubuque, Edward Bond</td>
+                            <td>Salt Season</td>
+                            <td>2010</td>
+                        </tr>
+                        <tr>
+                            <td>Bite Size Plays</td>
+                            <td>White Room Theatre</td>
+                            <td>2010</td>
+                        </tr>
+                        <tr>
+                            <td>The Real Inspector Hound</td>
+                            <td>Lewes Little Theatre</td>
+                            <td>2009</td>
+                        </tr>
+                        <tr>
+                            <td>Blood Brothers</td>
+                            <td>Lewes Little Theatre</td>
+                            <td>2009</td>
+                        </tr>
+                        <tr>
+                            <td>Role Play for OSCE</td>
+                            <td>Brighton Role Play</td>
+                            <td>2009</td>
+                        </tr>
+                        <tr>
+                            <td>Tell Someone Who Cares</td>
+                            <td>White Room Theatre</td>
+                            <td>2009</td>
+                        </tr>
+                        <tr>
+                            <td>Bite Size Plays</td>
+                            <td>White Room Theatre</td>
+                            <td>2009</td>
+                        </tr>
+                        <tr>
+                            <td>4 month Theatre in Education Tour</td>
+                            <td>Rainbow Theatre</td>
+                            <td>2008</td>
+                        </tr>
+                        <tr>
+                            <td>Cinderella</td>
+                            <td>Rainbow Theatre</td>
+                            <td>2008</td>
+                        </tr>
+                        <tr>
+                            <td>Once a Catholic</td>
+                            <td>ACT</td>
+                            <td>2008</td>
+                        </tr>
+                        <tr>
+                            <td>Christmas Carol</td>
+                            <td>ACT</td>
+                            <td>2008</td>
+                        </tr>
+                        <tr>
+                            <td>Preston Manor</td>
+                            <td>Brighton Museum</td>
+                            <td>2008</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                    <!--Nav Bar-->
-                    <!--For the collaspe Navbar function for smaller devices new headers are implimented with smaller font size. 
-                    At the same time original headers are removed-->
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-sm navbar-light bg-white nav-menuitem">
-                            <a class="navbar-brand d-block d-sm-none" href="index.html">
-                                <div class="row">
-                                    <span class="nav-menu-title-actress mx-auto mb-1">Actor</span>
-                                </div>
-                                <div class="row">
-                                    <span class="nav-menu-title-lisa">Lisa Fairfield</span>
-                                </div>
-                            </a>
-                            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-
-                            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                                <ul class="navbar-nav mr-auto mt-3 mt-sm-0 mx-auto">
-                                    <li class="nav-item pr-3">
-                                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item pr-3">
-                                        <a class="nav-link" href="gallery.html">Gallery</a>
-                                    </li>
-                                    <li class="nav-item pr-3">
-                                        <a class="nav-link" href="showreels.html">Showreels</a>
-                                    </li>
-                                    <li class="nav-item pr-3">
-                                        <a class="nav-link" href="bio.html">Bio</a>
-                                    </li>
-                                    <li class="nav-item pr-3">
-                                        <a class="nav-link active" href="profile.html">Profile</a>
-                                    </li>
-                                    <li class="nav-item pr-3">
-                                        <a class="nav-link" href="contact.html">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
+                <div class="row">
+                    <div class="col mt-5 mb-3">
+                        <p class="section-headers"><i class="fas fa-film"></i>&nbsp;&nbsp;&nbsp;Film Experience</p>
                     </div>
-
-                    <!--Block Divider-->
-                    <div class="col-12 mb-3">
-                        <div class="header-block-divider mx-auto mt-0"></div>
-                    </div>
+                </div>
+                <table class="table table-striped mb-5">
+                    <thead>
+                        <tr>
+                            <th scope="col">Perfomance</th>
+                            <th scope="col">Company</th>
+                            <th scope="col" class="text-right">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Daddy Loves Lola</td>
+                            <td>London Film School</td>
+                            <td class="text-right">2006</td>
+                        </tr>
+                        <tr>
+                            <td>Slimfast Commercial</td>
+                            <td>London Film School</td>
+                            <td class="text-right">2006</td>
+                        </tr>
+                        <tr>
+                            <td>'View' (Short Film)</td>
+                            <td>Brian Franklin Productions</td>
+                            <td class="text-right">2006</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Divider to allow spaving with toggle used-->
+                <div class="row mt-5 mb-5">
+                    <div class="col"></div>
                 </div>
             </div>
-        </header>
+        </div>
+    </div>
 
-        <section>
-            <div class="container">
-                <div class="row mb-5 profile-margin">
-                    <div class="col-12">
-                        <!--Image/ Table for lg-->
-                        <div class="row mb-5">
-                            <div class="col-6 d-none d-md-block text-center">
-                                <img src="assets/images/profile.png" class="profile" alt="Lisa Fairfield Actress" />
-                            </div>
-                            <table class="table table-borderless table-sm col-6 d-none d-md-block my-auto">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Height</th>
-                                        <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                        <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                        <th scope="col" style="font-weight: normal;">5'7</th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col">Build</th>
-                                        <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                        <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                        <th scope="col" style="font-weight: normal;">Slim</th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col">Hair</th>
-                                        <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                        <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                        <th scope="col" style="font-weight: normal;">Light Brown</th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col">Eyes</th>
-                                        <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                        <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                        <th scope="col" style="font-weight: normal;">Green</th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col">Playing Age</th>
-                                        <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                        <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                        <th scope="col" style="font-weight: normal;">30-40</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
+    <!-- Scroll to top of page arrow -->
+    <div class="page-top-button shadow-sm rounded-0 border border-black d-xl-none">
+        <a class="page-top-link d-flex h-100">
+            <i class="fas fa-chevron-up text-black mx-auto my-auto"></i>
+        </a>
+    </div>
 
-                        <!--Image/ Table for sm-->
-                        <div class="row mb-5 d-md-none">
-                            <div class="col-12 text-center">
-                                <img src="assets/images/profile.png" class="profile" alt="Lisa Fairfield Actress" />
-                            </div>
-                        </div>
-                        <table class="table table-borderless table-sm d-md-none">
-                            <thead>
-                                <tr>
-                                    <th scope="col">&nbsp;</th>
-                                    <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                    <th scope="col">Height</th>
-                                    <th scope="col" style="font-weight: normal;">5'7</th>
-                                </tr>
-                                <tr>
-                                    <th scope="col">&nbsp;</th>
-                                    <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                    <th scope="col">Build</th>
-                                    <th scope="col" style="font-weight: normal;">Slim</th>
-                                </tr>
-                                <tr>
-                                    <th scope="col">&nbsp;</th>
-                                    <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                    <th scope="col">Hair</th>
-                                    <th scope="col" style="font-weight: normal;">Light Brown</th>
-                                </tr>
-                                <tr>
-                                    <th scope="col">&nbsp;</th>
-                                    <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                    <th scope="col">Eyes</th>
-                                    <th scope="col" style="font-weight: normal;">Green</th>
-                                </tr>
-                                <tr>
-                                    <th scope="col">&nbsp;</th>
-                                    <th scope="col">&nbsp;&nbsp;&nbsp;</th>
-                                    <th scope="col">Playing Age</th>
-                                    <th scope="col" style="font-weight: normal;">30-40</th>
-                                </tr>
-                            </thead>
-                        </table>
-                        <div class="row">
-                            <div class="col-12 mt-5 mb-3">
-                                <p class="section-headers"><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp;&nbsp;Achievements</p>
-                            </div>
-                        </div>
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Qualification</th>
-                                    <th scope="col" class="text-right">Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>'Acting Diploma' Academy of Creative Training (ACT)</td>
-                                    <td class="text-right">2005-07</td>
-                                </tr>
-                                <tr>
-                                    <td>Meisner Technique Training</td>
-                                    <td class="text-right">2005 (4 Mths)</td>
-                                </tr>
-                                <tr>
-                                    <td>Forum Theatre Augustus Boal Weekend Workshop</td>
-                                    <td class="text-right">2005</td>
-                                </tr>
-                                <tr>
-                                    <td>Physical Theatre and Body Voice Training with Britt Forsberg</td>
-                                    <td class="text-right">2005</td>
-                                </tr>
-                                <tr>
-                                    <td>'Foundation in Acting' Academy of Creative Training (ACT)</td>
-                                    <td class="text-right">2004-05</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="row">
-                            <div class="col mt-5 mb-3">
-                                <p class="section-headers"><i class="fas fa-theater-masks"></i>&nbsp;&nbsp;&nbsp;Theatre Experience</p>
-                            </div>
-                        </div>
-                        <!--Table for desktop-->
-                        <table class="table table-striped d-none d-md-block">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Perfomance</th>
-                                    <th scope="col">Role</th>
-                                    <th scope="col">Company</th>
-                                    <th scope="col">Venue</th>
-                                    <th scope="col">Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Playhouse Creatures by April de Angelis</td>
-                                    <td>Mrs Farley</td>
-                                    <td>Bryteye Productions</td>
-                                    <td>All Saints, Lewes</td>
-                                    <td>2014</td>
-                                </tr>
-                                <tr>
-                                    <td>Gabriel by Moira Buffini</td>
-                                    <td>Lily</td>
-                                    <td>Bryteye Productions</td>
-                                    <td>All Saints, Lewes</td>
-                                    <td>2012</td>
-                                </tr>
-                                <tr>
-                                    <td>Blackbird</td>
-                                    <td>Una</td>
-                                    <td>The Players’ Collective</td>
-                                    <td>Marlborough Theatre</td>
-                                    <td>2011</td>
-                                </tr>
-                                <tr>
-                                    <td>David Harrower Lysistrata</td>
-                                    <td>Myrene</td>
-                                    <td>The Players’ Collective</td>
-                                    <td>All Saints, Lewes</td>
-                                    <td>2011</td>
-                                </tr>
-                                <tr>
-                                    <td>Kvetch, Stephen Berkoff</td>
-                                    <td>Donna</td>
-                                    <td>Theatre 21</td>
-                                    <td>BMC, Brighton Fringe Festival</td>
-                                    <td>2010</td>
-                                </tr>
-                                <tr>
-                                    <td>In Lambeth, Jack Shepherd</td>
-                                    <td>Catherine Blake</td>
-                                    <td>Love and Madness</td>
-                                    <td>St Joseph Theatre, Scarborough</td>
-                                    <td>2010</td>
-                                </tr>
-                                <tr>
-                                    <td>Lady of Dubuque, Edward Bond</td>
-                                    <td>Lucinda</td>
-                                    <td>Salt Season</td>
-                                    <td>Lewes Theatre</td>
-                                    <td>2010</td>
-                                </tr>
-                                <tr>
-                                    <td>Bite Size Plays</td>
-                                    <td>Various</td>
-                                    <td>White Room Theatre</td>
-                                    <td>Bedlam Theatre, Edinburgh Festival</td>
-                                    <td>2010</td>
-                                </tr>
-                                <tr>
-                                    <td>The Real Inspector Hound</td>
-                                    <td>Cynthia</td>
-                                    <td>Lewes Little Theatre</td>
-                                    <td>Lewes Little Theatre</td>
-                                    <td>2009</td>
-                                </tr>
-                                <tr>
-                                    <td>Blood Brothers</td>
-                                    <td>Mrs Johnston</td>
-                                    <td>Lewes Little Theatre</td>
-                                    <td>Lewes Little Theatre</td>
-                                    <td>2009</td>
-                                </tr>
-                                <tr>
-                                    <td>Role Play for OSCE</td>
-                                    <td>Various</td>
-                                    <td>Brighton Role Play</td>
-                                    <td>Brighton Hospital</td>
-                                    <td>2009</td>
-                                </tr>
-                                <tr>
-                                    <td>Tell Someone Who Cares</td>
-                                    <td>Sandy</td>
-                                    <td>White Room Theatre</td>
-                                    <td>Sally Bennis Theatre</td>
-                                    <td>2009</td>
-                                </tr>
-                                <tr>
-                                    <td>Bite Size Plays</td>
-                                    <td>Various</td>
-                                    <td>White Room Theatre</td>
-                                    <td>Roman Eagle Lodge, Edinburgh Festival Fringe First nomination</td>
-                                    <td>2009</td>
-                                </tr>
-                                <tr>
-                                    <td>4 month Theatre in Education Tour</td>
-                                    <td>Various</td>
-                                    <td>Rainbow Theatre</td>
-                                    <td>Southern County Schools</td>
-                                    <td>2008</td>
-                                </tr>
-                                <tr>
-                                    <td>Cinderella</td>
-                                    <td>Cinderella</td>
-                                    <td>Rainbow Theatre</td>
-                                    <td>Southern County Schools</td>
-                                    <td>2008</td>
-                                </tr>
-                                <tr>
-                                    <td>Once a Catholic</td>
-                                    <td>Mary McGInty</td>
-                                    <td>ACT</td>
-                                    <td>Brighton Pavillion</td>
-                                    <td>2008</td>
-                                </tr>
-                                <tr>
-                                    <td>Christmas Carol</td>
-                                    <td>Niece</td>
-                                    <td>ACT</td>
-                                    <td>The Nightingale, Brighton</td>
-                                    <td>2008</td>
-                                </tr>
-                                <tr>
-                                    <td>Preston Manor</td>
-                                    <td>Housekeeper</td>
-                                    <td>Brighton Museum</td>
-                                    <td>Preston Manor</td>
-                                    <td>2008</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!--Table for small-->
-                        <table class="table table-striped d-md-none">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Perfomance</th>
-                                    <th scope="col">Company</th>
-                                    <th scope="col">Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Playhouse Creatures by April de Angelis</td>
-                                    <td>Bryteye Productions</td>
-                                    <td>2014</td>
-                                </tr>
-                                <tr>
-                                    <td>Gabriel by Moira Buffini</td>
-                                    <td>Bryteye Productions</td>
-                                    <td>2012</td>
-                                </tr>
-                                <tr>
-                                    <td>Blackbird</td>
-                                    <td>The Players’ Collective</td>
-                                    <td>2011</td>
-                                </tr>
-                                <tr>
-                                    <td>David Harrower Lysistrata</td>
-                                    <td>The Players’ Collective</td>
-                                    <td>2011</td>
-                                </tr>
-                                <tr>
-                                    <td>Kvetch, Stephen Berkoff</td>
-                                    <td>Theatre 21</td>
-                                    <td>2010</td>
-                                </tr>
-                                <tr>
-                                    <td>In Lambeth, Jack Shepherd</td>
-                                    <td>Love and Madness</td>
-                                    <td>2010</td>
-                                </tr>
-                                <tr>
-                                    <td>Lady of Dubuque, Edward Bond</td>
-                                    <td>Salt Season</td>
-                                    <td>2010</td>
-                                </tr>
-                                <tr>
-                                    <td>Bite Size Plays</td>
-                                    <td>White Room Theatre</td>
-                                    <td>2010</td>
-                                </tr>
-                                <tr>
-                                    <td>The Real Inspector Hound</td>
-                                    <td>Lewes Little Theatre</td>
-                                    <td>2009</td>
-                                </tr>
-                                <tr>
-                                    <td>Blood Brothers</td>
-                                    <td>Lewes Little Theatre</td>
-                                    <td>2009</td>
-                                </tr>
-                                <tr>
-                                    <td>Role Play for OSCE</td>
-                                    <td>Brighton Role Play</td>
-                                    <td>2009</td>
-                                </tr>
-                                <tr>
-                                    <td>Tell Someone Who Cares</td>
-                                    <td>White Room Theatre</td>
-                                    <td>2009</td>
-                                </tr>
-                                <tr>
-                                    <td>Bite Size Plays</td>
-                                    <td>White Room Theatre</td>
-                                    <td>2009</td>
-                                </tr>
-                                <tr>
-                                    <td>4 month Theatre in Education Tour</td>
-                                    <td>Rainbow Theatre</td>
-                                    <td>2008</td>
-                                </tr>
-                                <tr>
-                                    <td>Cinderella</td>
-                                    <td>Rainbow Theatre</td>
-                                    <td>2008</td>
-                                </tr>
-                                <tr>
-                                    <td>Once a Catholic</td>
-                                    <td>ACT</td>
-                                    <td>2008</td>
-                                </tr>
-                                <tr>
-                                    <td>Christmas Carol</td>
-                                    <td>ACT</td>
-                                    <td>2008</td>
-                                </tr>
-                                <tr>
-                                    <td>Preston Manor</td>
-                                    <td>Brighton Museum</td>
-                                    <td>2008</td>
-                                </tr>
-                            </tbody>
-                        </table>
+</section>
+        
+{% endblock %}
 
-                        <div class="row">
-                            <div class="col mt-5 mb-3">
-                                <p class="section-headers"><i class="fas fa-film"></i>&nbsp;&nbsp;&nbsp;Film Experience</p>
-                            </div>
-                        </div>
-                        <table class="table table-striped mb-5">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Perfomance</th>
-                                    <th scope="col">Company</th>
-                                    <th scope="col" class="text-right">Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Daddy Loves Lola</td>
-                                    <td>London Film School</td>
-                                    <td class="text-right">2006</td>
-                                </tr>
-                                <tr>
-                                    <td>Slimfast Commercial</td>
-                                    <td>London Film School</td>
-                                    <td class="text-right">2006</td>
-                                </tr>
-                                <tr>
-                                    <td>'View' (Short Film)</td>
-                                    <td>Brian Franklin Productions</td>
-                                    <td class="text-right">2006</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!--Divider to allow spaving with toggle used-->
-                        <div class="row mt-5 mb-5">
-                            <div class="col"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Scroll to top of page arrow -->
-            <div class="page-top-button shadow-sm rounded-0 border border-black d-xl-none">
-                <a class="page-top-link d-flex h-100">
-                    <i class="fas fa-chevron-up text-black mx-auto my-auto"></i>
-                </a>
-            </div>
+{% block scripts %}
 
-        </section>
+<script src="static/js/scroll.js"></script>
 
-        <!--Footer-->
-        <footer class="container-fluid" id="wrapper">
-            <div class="row footer mb-4">
-                <!--Block Divider-->
-                <div class="col-12">
-                    <div class="header-block-divider mx-auto mt-0 mb-4"></div>
-                </div>
-                <div class="col-md-6 col-lg-6 footer-align-email footer-margin-bottom">
-                    <a href="mailto:lisafairfield1@gmail.com?">
-                        <p class="footer-menuitem"><i class="far fa-envelope"></i>&nbsp;&nbsp;lisafairfield1@gmail.com</p>
-                        <span class="sr-only">Email</span>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-6 footer-align-tel">
-                    <a href="tel:+447890287456">
-                        <p class="footer-menuitem"><i class="fas fa-phone"></i>&nbsp;&nbsp;+44 7890 287 456</p>
-                        <span class="sr-only">Telephone</span>
-                    </a>
-                </div>
-                <div class="col-12 copyright text-muted">
-                    <p class="copyright-text">Copyright <i class="far fa-copyright"></i> 2021 Murray Bealby</p>
-                </div>
-            </div>
-        </footer>
+{% endblock %}
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="assets/js/scroll.js"></script>
-    </body>
-</html>
