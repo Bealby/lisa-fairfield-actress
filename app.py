@@ -24,6 +24,13 @@ def home():
 
 # Function to load 'Profile' page
 
+@app.route('/gallery')
+def gallery():
+    return render_template("gallery.html")
+
+
+# Function to load 'Profile' page
+
 @app.route('/profile')
 def profile():
     return render_template("profile.html")
