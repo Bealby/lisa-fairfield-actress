@@ -22,18 +22,25 @@ def home():
     return render_template("index.html")
 
 
-# Function to load 'Profile' page
+# Function to load 'Gallery' page
 
 @app.route('/gallery')
 def gallery():
     return render_template("gallery.html")
 
 
-# Function to load 'Profile' page
+# Function to load 'Showreels' page
 
 @app.route('/showreels')
 def showreels():
     return render_template("showreels.html")
+
+
+# Function to load 'Bio' page
+
+@app.route('/bio')
+def bio():
+    return render_template("bio.html")
 
 
 # Function to load 'Profile' page
