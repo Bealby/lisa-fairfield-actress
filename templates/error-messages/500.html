@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block content %}
+
+<section>
+    <!--Main - error message for 500-->
+    <div class="container error-message pt-5 mt-5">
+        <div class="row">
+            <div class="col-12">
+                <p class="mx-auto text-center">
+                    The server encountered an error and could not complete your request
+                </p>
+            </div>
+            <div class="col-12 text-center">
+                <i class="fas fa-arrow-circle-down"></i>
+            </div>
+            <div class="col-12 text-center">
+                <a class="mx-auto" href="{{ url_for('home') }}">Home</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

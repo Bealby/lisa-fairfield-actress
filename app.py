@@ -11,6 +11,7 @@ app = Flask(__name__)
 
 # EMAILJS_KEY' stored in Enviroment Variables
 
+app.secret_key = os.environ.get("SECRET_KEY")
 EMAILJS_KEY = os.environ.get("EMAILJS_KEY")
 
 
@@ -56,6 +57,19 @@ def profile():
 def contact():
     return render_template("contact.html",
                            EMAILJS_KEY=EMAILJS_KEY)
+
+
+# Functions to handle 404 & 500 errors
+
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('error-messages/404.html'), 404
+
+
+@app.errorhandler(500)
+def something_wrong(error):
+    return render_template('error-messages/500.html'), 500
 
 
 # IP and PORT
