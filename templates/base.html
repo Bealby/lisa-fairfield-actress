@@ -58,13 +58,13 @@
 
                             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                                 <ul class="navbar-nav mr-auto mt-3 mt-sm-0 mx-auto">
-                                    <li class="nav-item active pr-3">
+                                    <li class="nav-item pr-3 {{ 'active' if active_page == 'home' else '' }}">
                                         <a class="nav-link" href="{{url_for('home')}}">Home<span class="sr-only">(current)</span></a>
                                     </li>
-                                    <li class="nav-item pr-3">
+                                    <li class="nav-item pr-3 {{ 'active' if active_page == 'gallery' else '' }}">
                                         <a class="nav-link" href="{{url_for('gallery')}}">Gallery</a>
                                     </li>
-                                    <li class="nav-item pr-3">
+                                    <li class="nav-item pr-3 {{ 'active' if active_page == 'showreels' else '' }}">
                                         <a class="nav-link" href="{{url_for('showreels')}}">Showreels</a>
                                     </li>
                                     <li class="nav-item pr-3">
