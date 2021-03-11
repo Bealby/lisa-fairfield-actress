@@ -9,22 +9,22 @@ body{
 
  .header-title h1 {
      font-family: 'Calligraffitti', cursive;
-     font-size: 60px;
-     color: #000;
+     font-size: 3.75rem;
+     color: rgb(0, 0, 0, 1);
      text-align: center;
-     margin-top: 0px;
-     margin-bottom: 25px;
-     letter-spacing: 4px;
+     margin-top: 0rem;
+     margin-bottom: 1.5625rem;
+     letter-spacing: 0.25rem;
 }
 
  .header-title h2 {
      font-family: 'Playfair Display', serif;
-     font-size: 25px;
-     color: #000;
+     font-size: 1.5625rem;
+     color: rgb(0, 0, 0, 1);
      text-align: center;
-     margin-top: 20px;
-     margin-bottom: 16px;
-     letter-spacing: 1px;
+     margin-top: 1.25rem;
+     margin-bottom: 1rem;
+     letter-spacing: 0.0625rem;
 }
 
  .header-title a {
@@ -35,40 +35,40 @@ body{
 
  .header-block-divider {
      width: 95%;
-     height: 1px;
+     height: 0.0625rem;
      border: 0;
-     background-color: #000;
-     margin-top: 1px;
-     margin-bottom: 1px;
+     background-color: rgb(0, 0, 0, 1);
+     margin-top: 0.0625rem;
+     margin-bottom: 0.0625rem;
 }
 
 /*---Navbar---*/
 
  .nav-menuitem a {
      font-family: 'Playfair Display', serif;
-     font-size: 18px;
+     font-size: 1.125rem;
      font-weight: 600;
-     color: #000;
-     margin: 0px;
+     color: rgb(0, 0, 0, 1);
+     margin: 0rem;
 }
 
  .nav-menu-title-lisa {
      font-family: 'Calligraffitti', cursive;
-     font-size: 30px;
-     color: rgb(0, 0, 0);
-     margin-top: 0px;
-     margin-left: 10px;
-     margin-bottom: 0px;
-     margin-right: 0px;
-     letter-spacing: 2px;
+     font-size: 1.875rem;
+     color: rgb(0, 0, 0, 1);
+     margin-top: 0rem;
+     margin-left: 0.625rem;
+     margin-bottom: 0rem;
+     margin-right: 0rem;
+     letter-spacing: 0.125rem;
 }
 
  .nav-menu-title-actress {
      font-family: 'Playfair Display', serif;
-     font-size: 20px;
-     color: rgb(0, 0, 0);
-     margin-top: 0px;
-     letter-spacing: 1px;
+     font-size: 1.25rem;
+     color: rgb(0, 0, 0, 1);
+     margin-top: 0rem;
+     letter-spacing: 0.0625rem;
 }
 
 .navbar-toggler:focus,
@@ -90,7 +90,7 @@ body{
  .btn-font-send {
      background-color:rgb(67, 67, 67, 1);
      font-weight: 600;
-     letter-spacing: 2px;
+     letter-spacing: 0.125rem;
      border-radius: 0.5rem;
      box-shadow: 0rem 0rem 0.5rem 0rem rgb(0, 0, 0, 1);
      color: rgb(255,255, 255);
@@ -99,7 +99,7 @@ body{
  .btn-font-open {
      background-color:rgb(67, 67, 67, 1);
      font-weight: 600;
-     letter-spacing: 2px;
+     letter-spacing: 0.125rem;
      border-radius: 0.5rem;
      color: rgb(255,255, 255);
 }
@@ -136,8 +136,8 @@ body{
 
  .section-text {
      font-family: 'Playfair Display', serif;
-     font-size: 17px;
-     color: #000;
+     font-size: 1.0625rem;
+     color: rgb(0, 0 ,0, 1);
 }
 
  .reference-text{
