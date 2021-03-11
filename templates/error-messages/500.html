@@ -3,17 +3,15 @@
 <section>
     <!--Main - error message for 500-->
     <div class="container error-message pt-5 mt-5">
-        <div class="row">
+          <div class="row">
             <div class="col-12">
-                <p class="mx-auto text-center">
+                <p class="mx-auto error-text text-muted text-center pl-2 pr-2">
                     The server encountered an error and could not complete your request
                 </p>
             </div>
-            <div class="col-12 text-center">
-                <i class="fas fa-arrow-circle-down"></i>
             </div>
-            <div class="col-12 text-center">
-                <a class="mx-auto" href="{{ url_for('home') }}">Home</a>
+            <div class="col-12 text-center mt-4 error-links">
+                <a class="mx-auto p-2" href="{{ url_for('home') }}">Home</a>
             </div>
         </div>
     </div>
