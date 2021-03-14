@@ -410,7 +410,7 @@ a:not([href]):not([tabindex]) {
 
  .footer-menuitem {
      font-family: 'Roboto', serif;
-     font-size: 20px;
+     font-size: 17px;
      font-weight: 600;
      color:rgb(0,0,0,.5);
      margin: 0px;
@@ -550,6 +550,13 @@ audio {
  @media(min-width:768px){
      .footer-margin-bottom{
          margin-bottom: 0rem;
+    }
+}
+
+/*---Footer align margin-bottom for mobile devices for better spacing---*/
+ @media(min-width:768px){
+     .footer-menuitem {
+         font-size: 20px;
     }
 }
 
