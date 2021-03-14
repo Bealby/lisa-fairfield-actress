@@ -399,11 +399,11 @@ a:not([href]):not([tabindex]) {
 /*---Font Awesome---*/
 
  .fa-envelope{
-     color:rgb(0, 0, 0, 1);
+     color:rgb(0, 0, 0, 0.5);
 }
 
  .fa-phone{
-     color:rgb(0, 0, 0, 1);
+     color:rgb(0, 0, 0, 0.5);
 }
 
 /*---footer---*/
