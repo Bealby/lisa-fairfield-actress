@@ -280,7 +280,7 @@ body{
 
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: rgb(254, 254, 254, 1);
     margin: auto;
     padding: 0;
     width: 90%;
@@ -306,7 +306,7 @@ body{
  .error-text{
      font-family: 'Playfair Display', serif;
      font-size: 1.25rem;
-     color: #000;
+     color: rgb(0, 0, 0, 0, 1);
 }
 
 
