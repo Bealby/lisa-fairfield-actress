@@ -731,45 +731,47 @@ audio {
 /*---Margin/ Width adjustments for better viewing on mb/ lg---*/
 
 @media (min-width: 992px) {
-.showreel-block-divider {
-	width: 20%;
-	height: 0.1rem;
-	border: 0;
-	background-color: rgb(0, 0, 0, 1);
-	margin-top: 4rem;
-	margin-bottom: 2rem;
+    .showreel-block-divider {
+        width: 20%;
+        height: 0.1rem;
+        border: 0;
+        background-color: rgb(0, 0, 0, 1);
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }   
 }
 
 /*---Reduce font size headers for audio showreels for better viewing on mobile---*/
 
 @media (min-width: 992px) {
-.section-text-showreels {
-	font-size: 1.5rem;
+    .section-text-showreels {
+        font-size: 1.5rem;
+    }
 }
 
 /*---Text alignment left for mb for better viewing---*/
 
 @media (min-width: 576px) {
-.reference-alignment{
-    text-align:center;
+    .reference-alignment {
+        text-align:center;
     }
 }
 
 /*---Reduce header font for mobile devices for better viewing---*/
 
 @media (min-width: 992px) {
-.section-headers {
-	font-family: 'Playfair Display', serif;
-	font-size: 1.5rem;
-	font-weight: 700;
-	color: rgb(0, 0, 0, 1);
+    .section-headers {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: rgb(0, 0, 0, 1);
     }
 }
 
 /*---Margin-top for button in mb for better spacing---*/
 
-@media (min-width: 442px) {
-    .bio-button{
-        margin-top:0rem !important;
+@media (min-width: 422px) {
+    .bio-button {
+        margin-top:0rem;
     }
 }
