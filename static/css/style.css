@@ -716,7 +716,7 @@ audio {
     }
 }
 
-/*---Padding top for gallery page for desktop for better spacing---*/
+/*---Padding top for gallery page for better spacing on desktop---*/
 
 @media (min-width: 576px) {
     .gallery-padding-bottom{
@@ -724,7 +724,7 @@ audio {
     }
 }
 
-/*------*/
+/*---Margin/ Width adjustments for better viewing on mb/ lg---*/
 
 @media (min-width: 992px) {
 .showreel-block-divider {
@@ -736,7 +736,7 @@ audio {
 	margin-bottom: 2rem;
 }
 
-/*------*/
+/*---Reduce font size headers for audio showreels for better viewing on mobile---*/
 
 @media (min-width: 992px) {
 .section-text-showreels {
