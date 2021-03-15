@@ -158,9 +158,9 @@ body {
 .section-text-showreels {
 	font-family: 'Playfair Display', serif;
 	font-size: 1.4rem;
-    color: rgb(0, 0, 0, 1);
-    margin-top: 1.8rem;
-    margin-bottom: 2rem;
+	color: rgb(0, 0, 0, 1);
+	margin-top: 1.8rem;
+	margin-bottom: 2rem;
 }
 
 .section-text-contact {
@@ -180,17 +180,18 @@ body {
 	text-align: left;
 }
 
-.reference-alignment{
-    text-align:left;
+.reference-alignment {
+	text-align: left;
 }
+
 
 /*---Margins---*/
 
 .bio-margin {
 	margin-left: 2rem;
 	margin-right: 2rem;
-    margin-top: 0rem;
-    margin-bottom: 5rem;
+	margin-top: 0rem;
+	margin-bottom: 5rem;
 }
 
 .profile-margin {
@@ -215,13 +216,14 @@ body {
 	padding: 0rem;
 }
 
-.gallery-padding-top{
-    padding-top:0rem;
+.gallery-padding-top {
+	padding-top: 0rem;
 }
 
-.gallery-padding-bottom{
-    padding-bottom:0rem;
+.gallery-padding-bottom {
+	padding-bottom: 0rem;
 }
+
 
 /*---Images---*/
 
@@ -369,8 +371,8 @@ a:not([href]):not([tabindex]) {
 	text-decoration: none;
 }
 
-.bio-button{
-    margin-top:1rem;
+.bio-button {
+	margin-top: 1rem;
 }
 
 
@@ -456,8 +458,8 @@ img.hover-shadow {
 	color: rgb(0, 0, 0, 0.5);
 }
 
-.fa-microphone-alt{
-    	color: rgb(0, 0, 0, 1) !important;
+.fa-microphone-alt {
+	color: rgb(0, 0, 0, 1) !important;
 }
 
 
@@ -650,8 +652,9 @@ audio {
 	.bio-margin {
 		margin-left: 8rem;
 		margin-right: 8rem;
-        margin-top: 5rem !important;
-        margin-bottom: 5rem !important;	}
+		margin-top: 5rem !important;
+		margin-bottom: 5rem !important;
+	}
 }
 
 
@@ -715,63 +718,69 @@ audio {
 /*---Padding top for gallery page for desktop for better spacing---*/
 
 @media (min-width: 992px) {
-    .gallery-padding-top{
-        padding-top:5rem;
-    }
+	.gallery-padding-top {
+		padding-top: 5rem;
+	}
 }
+
 
 /*---Padding top for gallery page for better spacing on desktop---*/
 
 @media (min-width: 576px) {
-    .gallery-padding-bottom{
-        padding-bottom:3rem;
-    }
+	.gallery-padding-bottom {
+		padding-bottom: 3rem;
+	}
 }
+
 
 /*---Margin/ Width adjustments for better viewing on mb/ lg---*/
 
 @media (min-width: 992px) {
-    .showreel-block-divider {
-        width: 20%;
-        height: 0.0625rem;
-	    border: 0;
-	    background-color: rgb(108, 117, 125, 1);
-        margin-top: 4rem;
-        margin-bottom: 2rem;
-    }   
+	.showreel-block-divider {
+		width: 20%;
+		height: 0.0625rem;
+		border: 0;
+		background-color: rgb(108, 117, 125, 1);
+		margin-top: 4rem;
+		margin-bottom: 2rem;
+	}
 }
+
 
 /*---Reduce font size headers for audio showreels for better viewing on mobile---*/
 
 @media (min-width: 992px) {
-    .section-text-showreels {
-        font-size: 1.5rem;
-    }
+	.section-text-showreels {
+		font-size: 1.5rem;
+	}
 }
+
 
 /*---Text alignment left for mb for better viewing---*/
 
 @media (min-width: 576px) {
-    .reference-alignment {
-        text-align:center;
-    }
+	.reference-alignment {
+		text-align: center;
+	}
 }
+
 
 /*---Reduce header font for mobile devices for better viewing---*/
 
 @media (min-width: 992px) {
-    .section-headers {
-        font-family: 'Playfair Display', serif;
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: rgb(0, 0, 0, 1);
-    }
+	.section-headers {
+		font-family: 'Playfair Display', serif;
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: rgb(0, 0, 0, 1);
+	}
 }
+
 
 /*---Margin-top for button in mb for better spacing---*/
 
 @media (min-width: 422px) {
-    .bio-button {
-        margin-top:0rem;
-    }
+	.bio-button {
+		margin-top: 0rem;
+	}
 }
