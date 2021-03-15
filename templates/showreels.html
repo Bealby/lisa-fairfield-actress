@@ -1,7 +1,4 @@
-{% extends 'base.html' %}
-{% set active_page = "showreels" %}
-
-{% block content %}
+{% extends 'base.html' %} {% set active_page = "showreels" %} {% block content %}
 
 <!--Section Showreels-->
 <section class="container">
@@ -40,12 +37,9 @@
             </audio>
         </div>
     </div>
-
 </section>
 
-{% endblock %}
-
-{% block scripts %}
+{% endblock %} {% block scripts %}
 
 <script src="{{ url_for('static', filename='js/audio.js') }}"></script>
 

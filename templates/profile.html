@@ -1,8 +1,4 @@
-{% extends 'base.html' %}
-{% set active_page = "profile" %}
-
-
-{% block content %}
+{% extends 'base.html' %} {% set active_page = "profile" %} {% block content %}
 
 <section>
     <div class="container">
@@ -417,14 +413,10 @@
             <i class="fas fa-chevron-up text-black mx-auto my-auto"></i>
         </a>
     </div>
-
 </section>
-        
-{% endblock %}
 
-{% block scripts %}
+{% endblock %} {% block scripts %}
 
 <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
 
 {% endblock %}
-

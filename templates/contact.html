@@ -1,8 +1,5 @@
-{% extends 'base.html' %}
-{% set active_page = "contact" %}
+{% extends 'base.html' %} {% set active_page = "contact" %} {% block content %}
 
-{% block content %}
-        
 <!--Section Contact-From-->
 <section>
     <div class="container">
@@ -40,9 +37,7 @@
     </div>
 </section>
 
-{% endblock %}
-
-{% block scripts %}
+{% endblock %} {% block scripts %}
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 <script src="{{ url_for('static', filename='js/email.js') }}"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -50,4 +45,3 @@
     emailjs.init("{{ EMAILJS_KEY }}");
 </script>
 {% endblock %}
-
