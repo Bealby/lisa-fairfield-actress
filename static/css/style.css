@@ -204,6 +204,13 @@ body {
 	padding: 0rem;
 }
 
+.gallery-padding-top{
+    padding-top:0rem;
+}
+
+.gallery-padding-bottom{
+    padding-bottom:0rem;
+}
 
 /*---Images---*/
 
@@ -683,4 +690,21 @@ audio {
 	#wrapper {
 		padding-bottom: 3.5rem;
 	}
+}
+
+
+/*---Padding top for gallery page for desktop for better spacing---*/
+
+@media (min-width: 992px) {
+    .gallery-padding-top{
+        padding-top:5rem;
+    }
+}
+
+/*---Padding top for gallery page for desktop for better spacing---*/
+
+@media (min-width: 576px) {
+    .gallery-padding-bottom{
+        padding-bottom:3rem;
+    }
 }
