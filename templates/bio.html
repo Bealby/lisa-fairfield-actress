@@ -1,47 +1,198 @@
-{% extends 'base.html' %} {% set active_page = "contact" %} {% block content %}
+{% extends 'base.html' %}
+{% set active_page = "bio" %}
 
-<!--Section Contact-From-->
+{% block content %}
+
+<!--Section Bio-->
+<!--Two columns of image and text on large devices. One column on Medium and small respectively.-->
 <section>
-    <div class="container">
-        <div class="row mt-5 mb-5">
-            <div class="col-12 mt-4 mb-5 contact-form">
-                <div class="col-12 contact-border contact-field-margin pt-4 pb-4">
-                    <p class="text-center section-text-contact text-muted mt-2 pb-2">For enquiries please contact me</p>
-                    <form onsubmit="return sendMail(this);" class="form-fields" id="myForm">
-                        <div class="row">
-                            <div class="col-12">
-                                <input type="text" name="name" class="form-control mt-3" id="fullname" placeholder="Name" required />
+    <div class="container-fluid">
+        <div class="row mt-5 section-text bio-margin">
+            <div class="col-12 col-lg-6 mb-5 bio-text-justify padding-bio-right">
+                <p class="section-headers"><i class="fa fa-trophy mb-3"></i>&ensp;&ensp;Education & Work</p>
+                <p class="text-muted">
+                    I graduated in English with a Upper Second Class Honours from Edinburgh University. Having
+                    further graduated from the Foundation course at the Academy of Creative Training (ACT) drama school
+                    in Brighton, I
+                    followed this up with a two year ACT Diploma.
+                </p>
+                <p class="text-muted">
+                    My first job entailed touring nine Theatre in Education (TIE) productions for six months and I
+                    thrived off the camaraderie,
+                    commitment and stamina needed to resonate with multiple characters in three daily shows.
+                    Improvisational skills, energy and versatility were essential in playing the sassy ingénue,
+                    historical and
+                    Shakespearean heroines, dark and light fairytale characters with equal aplomb.
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 mb-5 bio-text-justify padding-bio-left">
+                <p class="section-headers"><i class="fa fa-theater-masks mb-3"></i>&ensp;&ensp;What drives me?</p>
+                <p class="text-muted">
+                    My love, talent and instinct for the stage drives me and has enabled steady theatrical work over ten
+                    years with six professional Theatre Companies. I have regularly been involved in major cultural
+                    festivals.
+                </p>
+                <p class="text-muted">
+                    Versatile, with a wide playing age, I am not scared to delve deep into the dark, light and comic
+                    world with appropriate passion, calm instinct and sense of play.
+                </p>
+                <p class="text-muted">
+                    I am particularly attracted to the powerful theatrical inspiration an ensemble can bring to our
+                    community. Such an opportunity has has led me to set up my own children’s theatre group which is
+                    linked to the local
+                    theatre.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 offset-md-3 mb-5 text-center">
+                <img src="static/images/bio-image-1.png" class="img-fluid rounded image mb-3"
+                    alt="Lisa Fairfield Actress" />
+            </div>
+            <div class="ccol-12 col-lg-6 mb-5 bio-text-justify padding-bio-right">
+                <p class="section-headers"><i class="fas fa-running mb-3"></i>&ensp;&ensp;My Strengths</p>
+                <p class="text-muted">I am hard-working, committed and thrive on working within a team. A special
+                    strength is
+                    to be always aware to strive to satisfy the audience.</p>
+                <p class="text-muted">To date as an actress I have managed my career without an agent. I now wish to
+                    open more doors and expand my work on stage, film and adverts.</p>
+                <p class="text-muted">Directors have taken 'my troup' to award winning, five star
+                    productions to Edinburgh, Brighton and Glastonbury Festivals.</p>
+            </div>
+            <div class="col-12 col-lg-6 mb-5 bio-text-justify padding-bio-left">
+                <p class="section-headers"><i class="far fa-handshake mb-3"></i>&ensp;&ensp;Why Be My Agent?</p>
+                <p class="text-muted">
+                    I am an open and easy person who is never happier than when I am researching my character's
+                    background and
+                    inhabiting their world. Allowing for a three dimensional, spiritual, physical and vocally layered
+                    stage
+                    presence, to radiate.
+                </p>
+                <p class="text-muted">
+                    I deliver. Letting people down is not in my nature.
+                </p>
+                <p class="text-muted">
+                    My ability to absorb a character and follow authentic impulses, comes from listening skills and
+                    understanding the context. Relinquishing ego and respecting the rehearsal space like a place of
+                    worship all make for
+                    a fine foundation for a director to work from.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 offset-md-3 mb-5 text-center">
+                <img src="static/images/bio-image-2.png" class="img-fluid rounded image mb-3"
+                    alt="Lisa Fairfield Actress" />
+            </div>
+            <div class="col-12 mb-5 bio-text-justify text-center pl-0 pr-0">
+                <!-- Modal -->
+                <div class="modal modal-bio fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="section-headers">Nick Brice – Artistic Director</h4>
+                            </div>
+                            <div class="modal-body bio-text-justify">
+                                <p class="text-muted">I worked with Lisa for 3 years on a range of theatre projects in
+                                    Brighton, Edinburgh, London and at Glastonbury.</p>
+                                <p class="text-muted">
+                                    She was initially with us as a performer, quickly moving on and taking on a range of
+                                    producer-stage manager-team leader roles over the period that required a range of
+                                    important competencies and
+                                    emotional intelligence due to the range or pressures and challenges that performing
+                                    live theatre and hospitality present.
+                                </p>
+                                <p class="text-muted">
+                                    As a professional performer she was top class in all respects, well prepared,
+                                    reliable, punctual, and a great 'team player' - personable, friendly, warm and
+                                    gently assertive when required. The
+                                    shows she helped develop and perform were top quality, helping the team win a
+                                    shortlisting for the premier theatre award at the Edinburgh Festival.
+                                </p>
+                                <p class="text-muted">In addition to performing, she quickly and proactively involved
+                                    herself in all aspects of the leadership and management of the group.</p>
+                                <p class="text-muted">This included developing and running the catering we would provide
+                                    on our shows - sourcing supplies, organizing food preparation, serving the public.
+                                </p>
+                                <p class="text-muted">
+                                    She also took on the role of organizing the housing for our teams, sourcing
+                                    accommodation, dealing with agencies, negotiating contracts, as well as setting up
+                                    and organizing sleeping arrangements
+                                    to host guest and create revenue for the group to help boost incomes for team
+                                    members.
+                                </p>
+                                <p class="text-muted">
+                                    She also took a lead role in stage managing/supervising live high pressure show
+                                    environment with big audiences. This required dealing positively and assertively
+                                    with sensitive under pressure
+                                    performers. Her ability to get things done through potentially 'difficult' people
+                                    was very noticeable.
+                                </p>
+                                <p class="text-muted">She would also handle public contact with audiences calmly and
+                                    positively, serving breakfast to hungry demanding crowds at high speed and with
+                                    great customer service.</p>
+                                <p class="text-muted">
+                                    Her roles including researching and sourcing props, costumes and equipment from a
+                                    range of suppliers, keeping clear financial records, as well as ensuring everything
+                                    was transported to venues, and
+                                    when on location, ensuring the team put and kept everything in its right place.
+                                </p>
+                                <p class="text-muted">
+                                    She was always willing to take on any responsibility that needing doing - with
+                                    energy and calm, often leading other people, winning their support, getting and
+                                    keeping them on board with company
+                                    procedures and plans. She was very effective in organizing housing for entire teams,
+                                    dealing with the landlord and agency, setting up and coordinating plans and
+                                    schedules for room sharing to raise
+                                    additional income for the group.
+                                </p>
+                                <p class="text-muted">
+                                    She was always ahead of other members of the team on preparation and organization,
+                                    and was always positive, polite and warm even when under very high pressure and
+                                    demanding work schedules.
+                                </p>
+                                <p class="text-muted">
+                                    Our experience was one of a woman of energy, focus and dedication, who can handle
+                                    people with warmth and politeness, as well as being gently and assertive, dealing
+                                    with some very potentially
+                                    'difficult' characters under intense pressure, and making sure a wide range of
+                                    responsibilities were executed professionally. We won several award nominations,
+                                    awards and 5 star press acclaim for
+                                    our work during the time Lisa was on our team.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button"
+                                    class="btn btn-font-open btn-sm default-button hover-overlay-text margin-open"
+                                    data-dismiss="modal">CLOSE</button>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <input type="email" name="emailaddress" class="form-control mt-3" id="emailaddress" placeholder="Email" required />
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-12">
-                                <textarea rows="5" name="comment" class="form-control mt-3" id="comment" placeholder="Comment" required></textarea>
-                            </div>
-                        </div>
-                        <div class="container pt-3">
-                            <div class="row">
-                                <div class="col-10 offset-1 text-center">
-                                    <button type="submit" class="btn btn-font-send text-center default-button hover-overlay-text"><i class="fas fa-paper-plane"></i>&ensp;SEND</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
+                </div>
+                <div class="col-12 reference-alignment">
+                    <p class="section-headers"><i class="fas fa-book-open mb-3"></i>&ensp;&ensp;References</p>
+                    <p class="text-muted section-text">
+                        Nick Brice – Artistic Director&ensp;
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-font-open btn-sm bio-button default-button hover-overlay-text"
+                            data-toggle="modal" data-target="#myModal">OPEN</button>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Scroll to top of page arrow -->
+    <div class="page-top-button shadow-sm rounded-0 border border-black d-xl-none">
+        <a class="page-top-link d-flex h-100">
+            <i class="fas fa-chevron-up text-black mx-auto my-auto"></i>
+        </a>
+    </div>
+
 </section>
 
-{% endblock %} {% block scripts %}
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-<script src="{{ url_for('static', filename='js/email.js') }}"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
-    emailjs.init("{{ EMAILJS_KEY }}");
-</script>
+{% endblock %}
+
+
+{% block scripts %}
+
+<script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
+
 {% endblock %}
